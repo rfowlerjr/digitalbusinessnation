@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Business Nation</title>
+<meta name="description" content="Daily links to the news that matters for people who run businesses online: commerce, advertising, AI and funding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a wire-desk link sheet. Dense ruled columns of headlines, one lead, a right rail for dates and ads. */
+:root{
+  --paper:#f3f5f7;
+  --panel:#ffffff;
+  --ink:#0f1b2d;
+  --muted:#5a677a;
+  --rule:#d5dbe3;
+  --accent:#1746c9;
+  --ad:#eef1f5;
+  --display:"Archivo Narrow","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0c1320;--panel:#131c2c;--ink:#e8edf5;--muted:#93a0b4;--rule:#2a3548;--accent:#8fb0ff;--ad:#182235;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0c1320;--panel:#131c2c;--ink:#e8edf5;--muted:#93a0b4;--rule:#2a3548;--accent:#8fb0ff;--ad:#182235;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* Masthead */
+.mast{border-bottom:3px solid var(--ink);padding:18px 0 12px}
+.mast-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 24px}
+.brand{font-family:var(--display);font-weight:700;font-size:clamp(30px,5vw,46px);line-height:1;letter-spacing:.01em;text-transform:uppercase;margin:0}
+.brand span{color:var(--accent)}
+.stamp{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right}
+.nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding:10px 0;border-bottom:1px solid var(--rule);font-family:var(--display);font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:.04em}
+
+/* Ads */
+.ad{background:var(--ad);border:1px dashed var(--rule);color:var(--muted);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.ad b{font-weight:500;color:var(--ink)}
+.ad-leader{max-width:728px;height:90px;margin:16px auto}
+.ad-rect{width:100%;max-width:300px;height:250px;margin:0 auto}
+.ad-feed{min-height:64px;padding:10px;margin:0}
+
+/* Grid */
+.page{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;padding:8px 0 40px}
+.lead{padding:14px 0 20px;border-bottom:1px solid var(--ink)}
+.lead h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,4.2vw,42px);line-height:1.08;margin:6px 0 10px;text-wrap:balance}
+.lead p{margin:0;max-width:65ch;font-size:17px}
+.also{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;border-bottom:1px solid var(--ink)}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;align-items:start}
+.sec{padding-top:22px}
+.sec h3,.rail h3{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.08em;text-transform:uppercase;margin:0;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.item{padding:12px 0;border-bottom:1px solid var(--rule)}
+.also .item{border-bottom:0}
+.meta{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.02em}
+.meta .src{color:var(--accent)}
+.item h4{font-family:var(--body);font-weight:600;font-size:16.5px;line-height:1.3;margin:3px 0 3px;text-wrap:balance}
+.also .item h4{font-size:18px}
+.item p{margin:0;font-size:14px;color:var(--muted)}
+.wide{grid-column:1/-1}
+
+/* Rail */
+.rail{display:flex;flex-direction:column;gap:24px;padding-top:14px}
+.dates{list-style:none;margin:0;padding:0}
+.dates li{display:grid;grid-template-columns:58px 1fr;gap:10px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.dates time{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;color:var(--accent);padding-top:2px}
+.note{font-size:13px;color:var(--muted);margin:0}
+
+footer{border-top:3px solid var(--ink);padding:16px 0 32px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
+
+@media (max-width:900px){
+  .page{grid-template-columns:minmax(0,1fr)}
+  .rail{padding-top:0}
+}
+@media (max-width:620px){
+  .cols,.also{grid-template-columns:minmax(0,1fr)}
+  .also .item{border-bottom:1px solid var(--rule)}
+  .also .item:last-child{border-bottom:0}
+  .ad-leader{height:60px}
+  .stamp{text-align:left}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="mast-row">
+      <h1 class="brand">Digital Business <span>Nation</span></h1>
+      <div class="stamp" id="stamp"></div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Sections" id="nav"></nav>
+
+  <!-- AD SLOT 1: leaderboard 728x90 (shrinks on phones). Paste your ad network code inside this div and remove the placeholder text. -->
+  <div class="ad ad-leader" role="complementary" aria-label="Advertisement"><span>Advertisement</span><b>Ad space · 728 × 90</b></div>
+
+  <div class="page">
+    <main id="main"></main>
+
+    <aside class="rail">
+      <section>
+        <h3>Dates to watch</h3>
+        <ul class="dates" id="dates"></ul>
+      </section>
+
+      <!-- AD SLOT 2: medium rectangle 300x250. -->
+      <div class="ad ad-rect" role="complementary" aria-label="Advertisement"><span>Advertisement</span><b>Ad space · 300 × 250</b></div>
+
+      <section>
+        <h3>About this page</h3>
+        <p class="note">Digital Business Nation links to reporting from around the web for people who run businesses online. Every headline goes to the original publisher. Summaries are our own.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <span>© 2026 Digital Business Nation</span>
+    <span>Links go to the original publishers. Refreshed daily.</span>
+  </footer>
+</div>
+
+<script>
+/* ===== DAILY DATA: everything below this line is what changes each day ===== */
+const EDITION = { date: "Tuesday, November 10, 2026", updated: "Updated 8:45 a.m. PT" };
+
+const LEAD = {
+  src: "tech360.tv", when: "Nov 10",
+  url: "https://tech360.tv/china-s-singles-day-turns-on-simple-prices-and-ai-tokens",
+  title: "Singles' Day arrives with flat prices, modest growth and AI tokens in the cart",
+  sum: "Syntun counts 1.02 trillion yuan in sales across China's big platforms in the three weeks to the end of October, about 2.4% ahead of last year. Alibaba and JD.com are both pushing AI compute packages and AI-equipped devices alongside the usual discounts."
+};
+
+const ALSO = [
+  { src: "Modern Retail", when: "Nov 9",
+    url: "https://www.modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers/",
+    title: "TikTok Shop opens a paid membership for its heaviest US buyers",
+    sum: "TikTok Shop Plus launches to about a million top shoppers ahead of the holidays." },
+  { src: "Search Engine Roundtable", when: "Nov 9",
+    url: "https://seroundtable.com/recap-11-09-2026-42485.html",
+    title: "Google's follow-up-question ads are now showing in AI Mode",
+    sum: "Multiturn ads appear live, and Google is testing AI-written summaries inside search ads." }
+];
+
+const SECTIONS = [
+  { id: "commerce", name: "Commerce", items: [
+    { src: "Shopify / SEC", when: "Nov 3",
+      url: "https://www.sec.gov/Archives/edgar/data/0001594805/000159480526000067/exhibit991pressreleaseq320.htm",
+      title: "Shopify grows revenue 32% in Q3 as merchants process $119 billion",
+      sum: "Free cash flow margin reached 22%. Monthly recurring revenue rose to $230 million." },
+    { src: "Investing.com", when: "Nov 3",
+      url: "https://www.investing.com/news/company-news/shopify-q3-2026-slides-ai-drives-growth-as-shares-fall-on-spending-93CH-4995898",
+      title: "Shopify shares drop after earnings despite a profit beat",
+      sum: "Investors focused on spending plans and revenue that only matched forecasts." },
+    { src: "Adobe", when: "Sep 28",
+      url: "https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record",
+      title: "Adobe's holiday call: $275.1 billion online, Cyber Monday past $15 billion",
+      sum: "The forecast covers Nov. 1 to Dec. 31 and implies 6.7% growth over 2025." },
+    { src: "Retail Around the World", when: "Nov 9",
+      url: "https://retailslop.substack.com/p/retail-around-the-world-9-november",
+      title: "Kaufland says 85% of its top marketplace sellers now use its AI assistant",
+      sum: "The tool has grown from a chatbot into agents that handle performance reviews and retail media." },
+    { src: "Free Press Journal", when: "Oct 28",
+      url: "https://www.freepressjournal.in/business/gst-rules-eased-for-small-online-sellers-95-lakh-businesses-likely-to-benefit",
+      title: "India lets small online sellers register for GST using a platform's warehouse",
+      sum: "In force since Nov. 1. Roughly 950,000 sellers could benefit." }
+  ]},
+  { id: "advertising", name: "Advertising", items: [
+    { src: "CME Media", when: "Nov 1",
+      url: "https://cmemedia.com/digital-marketing-changes-november-2026/",
+      title: "Meta Pixel begins measuring conversions on customers' devices this Thursday",
+      sum: "One of several Meta and Google Ads changes landing before Black Friday." },
+    { src: "AdMake", when: "Nov 2",
+      url: "https://admakeai.com/blog/meta-ads-updates-november-2026",
+      title: "Meta's new ad terms, already pushed to Nov. 20, could slip again",
+      sum: "The date moved from Oct. 30 after pushback, and Meta has said it may move further." },
+    { src: "Boot Camp Digital", when: "Nov 5",
+      url: "https://bootcampdigital.com/blog/november-2026-digital-news-updates/",
+      title: "Meta's average price per ad climbed 24% in Q3",
+      sum: "Impressions grew 10%. New formats include Super Burst and Reels Trending ads." },
+    { src: "SocialBee", when: "Nov 9",
+      url: "https://socialbee.com/blog/meta-facebook-updates-news/",
+      title: "Meta drops manual placement choice for sales, leads and app campaigns",
+      sum: "A running log of this month's Meta ad platform changes." }
+  ]},
+  { id: "ai-funding", name: "AI & Funding", wide: true, items: [
+    { src: "AI Funding", when: "Nov 3",
+      url: "https://aifunding.me/newsletters/november-2026",
+      title: "fal's $1.6 billion round leads a $3.3 billion start to November for AI startups",
+      sum: "The tracker lists 11 rounds so far this month, with a median of $45 million." },
+    { src: "MEAN CEO", when: "Nov 2026",
+      url: "https://blog.mean.ceo/latest-ai-announcements-news-november-2026/",
+      title: "Roundup: the AI model and agent launches founders are sorting through this month",
+      sum: "A founder-focused digest of recent releases from the major labs." },
+    { src: "MEAN CEO", when: "Nov 2026",
+      url: "https://blog.mean.ceo/creator-economy-news-november-2026/",
+      title: "Roundup: creator businesses that own their audience are pulling ahead",
+      sum: "November's creator economy digest, with market-size estimates and income data." }
+  ]}
+];
+
+const DATES = [
+  ["Nov 11", "Singles' Day"],
+  ["Nov 12", "Meta Pixel on-device measurement starts"],
+  ["Nov 16", "Google Ads Data Manager changes customer-list uploads"],
+  ["Nov 20", "Meta's new ad terms scheduled to apply"],
+  ["Nov 27", "Black Friday"],
+  ["Nov 28", "Small Business Saturday"],
+  ["Nov 30", "Cyber Monday"]
+];
+/* ===== END DAILY DATA ===== */
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const meta = s => `<div class="meta"><span class="src">${esc(s.src)}</span> · ${esc(s.when)}</div>`;
+const item = s => `<article class="item">${meta(s)}<h4><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></h4><p>${esc(s.sum)}</p></article>`;
+
+document.getElementById("stamp").innerHTML = `${esc(EDITION.date)}<br>${esc(EDITION.updated)}`;
+document.getElementById("nav").innerHTML = SECTIONS.map(s => `<a href="#${s.id}">${esc(s.name)}</a>`).join("");
+document.getElementById("dates").innerHTML = DATES.map(d => `<li><time>${esc(d[0])}</time><span>${esc(d[1])}</span></li>`).join("");
+
+/* AD SLOT 3: in-feed sponsor strip, placed after the first two sections. */
+const feedAd = `<div class="ad ad-feed wide" role="complementary" aria-label="Advertisement" style="margin-top:22px"><span>Sponsored</span><b>In-feed ad space · one line of text and a link</b></div>`;
+
+document.getElementById("main").innerHTML =
+  `<section class="lead">${meta(LEAD)}<h2><a href="${esc(LEAD.url)}" target="_blank" rel="noopener">${esc(LEAD.title)}</a></h2><p>${esc(LEAD.sum)}</p></section>` +
+  `<section class="also">${ALSO.map(item).join("")}</section>` +
+  `<div class="cols">` +
+  SECTIONS.map((s, i) =>
+    (s.wide ? feedAd : "") +
+    `<section class="sec${s.wide ? " wide" : ""}" id="${s.id}"><h3>${esc(s.name)}</h3>${s.wide ? `<div class="cols">${s.items.map(item).join("")}</div>` : s.items.map(item).join("")}</section>`
+  ).join("") +
+  `</div>`;
+</script>
+</body>
+</html>
