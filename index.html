@@ -136,7 +136,7 @@ footer{border-top:3px solid var(--ink);padding:16px 0 32px;font-size:13px;color:
 
 <script>
 /* ===== DAILY DATA: everything below this line is what changes each day ===== */
-const EDITION = { date: "Saturday, November 14, 2026", updated: "Updated 4:51 a.m. PT" };
+const EDITION = { date: "Sunday, November 15, 2026", updated: "Updated 4:51 a.m. PT" };
 
 const LEAD = {
   src: "PYMNTS", when: "Nov 13",
@@ -146,18 +146,26 @@ const LEAD = {
 };
 
 const ALSO = [
-  { src: "The Technology Express", when: "Nov 14",
-    url: "https://thetechnologyexpress.com/langchain-raises-300-million-as-ai-agent-startup-hits-3-billion-valuation",
-    title: "LangChain raises $300 million at a $3 billion valuation",
-    sum: "CapitalG led the Series C for the AI agent tooling company, whose LangSmith platform has about 7,000 customers by its own count." },
-  { src: "Search Engine Roundtable", when: "Nov 10",
-    url: "https://www.seroundtable.com/google-november-2026-core-update-42504.html",
-    title: "Google's November core update is still rolling out as holiday shopping week approaches",
-    sum: "Google says the rollout that began Nov. 10 may take up to two weeks, which would carry it to the days before Black Friday." }
+  { src: "Staffing Industry Analysts", when: "Nov 13",
+    url: "https://www.staffingindustry.com/news/global-daily-news/mercor-lands-750m-funding-round-valuing-staffing-platform-at-20b",
+    title: "Mercor raises $750 million at a $20 billion valuation",
+    sum: "Staffing Industry Analysts reports the round for the AI-focused staffing platform." },
+  { src: "TechCrunch", when: "Nov 14",
+    url: "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+    title: "A petition asking Nvidia to reinstate Jensen Huang passes 115,000 signatures",
+    sum: "TechCrunch reports that Elon Musk, Replit's Amjad Masad and Epic Games' Tim Sweeney are among the signers, two days after Huang resigned as chief executive." }
 ];
 
 const SECTIONS = [
   { id: "commerce", name: "Commerce", items: [
+    { src: "Modern Retail", when: "Nov 9",
+      url: "https://modernretail.co/operations/exclusive-tiktok-shop-launches-a-paid-premium-tier-for-1m-of-its-top-us-shoppers",
+      title: "TikTok Shop pilots a $9.99-a-month membership with more than 1 million US shoppers",
+      sum: "Modern Retail reports that TikTok Shop Plus includes free shipping on badged items and an extra 10% off select products after a 30-day free trial." },
+    { src: "Walmart Marketplace", when: "Nov 12",
+      url: "https://marketplacelearn.walmart.com/releasenotes/ship-with-walmart-now-available-in-shipstation",
+      title: "Walmart sellers can now buy Ship with Walmart labels inside ShipStation",
+      sum: "Walmart says the program offers carrier discounts of up to 60%." },
     { src: "Marketplace Pulse", when: "Nov 12",
       url: "https://www.marketplacepulse.com/articles/amazon-has-put-four-in-ten-sellers-on-haul",
       title: "About four in ten active Amazon sellers now have listings on Haul",
@@ -166,14 +174,6 @@ const SECTIONS = [
       url: "https://marketplacelearn.walmart.com/releasenotes/update-to-our-suspension-and-termination-policy",
       title: "Walmart says long-suspended seller accounts can be terminated",
       sum: "The policy update covers accounts that stay suspended without a successful appeal." },
-    { src: "Amazon", when: "Nov 12",
-      url: "https://www.aboutamazon.ca/news/retail/meet-alexa-for-shopping-your-personalized-agentic-ai-assistant-on-amazon",
-      title: "Amazon brings its Alexa for Shopping assistant to Canada",
-      sum: "Amazon describes the tool as a personalized AI shopping agent for its store." },
-    { src: "PPC Land", when: "Nov 12",
-      url: "https://ppc.land/tiktok-shop-gives-us-sellers-up-to-10-reasons-a-products-sales-fell/",
-      title: "TikTok Shop adds a diagnosis tool that tells US sellers why a product's sales dropped",
-      sum: "PPC Land reports that the Product Diagnosis feature can list up to 10 reasons for a decline." },
     { src: "PPC Land", when: "Nov 12",
       url: "https://ppc.land/amazon-adds-fba-lead-time-estimates-a-5-day-shipment-may-take-12-at-peak/",
       title: "Amazon starts showing sellers estimated lead times for FBA shipments",
@@ -184,10 +184,18 @@ const SECTIONS = [
       sum: "The totals come from the data provider Syntun, which also reports a larger role for AI shopping tools this year." }
   ]},
   { id: "advertising", name: "Advertising", items: [
-    { src: "Tubefilter", when: "Nov 12",
-      url: "https://www.tubefilter.com/2026/11/12/iab-creator-economy-view-measurement-standard/",
-      title: "IAB pushes platforms toward a shared definition of a video view",
-      sum: "Of 53 industry leaders the trade body surveyed, 66% backed a common view standard, and it plans to work with the Media Rating Council on cross-platform terms." },
+    { src: "Search Engine Roundtable", when: "Nov 13",
+      url: "https://www.seroundtable.com/ilc-yahoo-42528.html",
+      title: "Yahoo's Scout AI search will pay publishers through a licensing nonprofit",
+      sum: "Search Engine Roundtable reports that the Internet Licensing Collective handles payments for content used in Scout's AI answers." },
+    { src: "Digiday", when: "Nov 12",
+      url: "https://digiday.com/marketing/why-brands-like-anthropologie-are-commissioning-creator-created-shows-instead-of-posts/",
+      title: "Brands are commissioning creators to make short series instead of single posts",
+      sum: "Digiday's example is Anthropologie, which hired creator Pooja Tripathi for a micro comedy series running Nov. 11 to 19." },
+    { src: "Search Engine Roundtable", when: "Nov 10",
+      url: "https://www.seroundtable.com/google-november-2026-core-update-42504.html",
+      title: "Google's November core update is still rolling out as holiday shopping week approaches",
+      sum: "Google says the rollout that began Nov. 10 may take up to two weeks, which would carry it to the days before Black Friday." },
     { src: "PR Newswire", when: "Nov 13",
       url: "https://www.prnewswire.com/news-releases/hig-forms-new-creator-economy-company-waveborn-acquires-jre-302938533.html",
       title: "H.I.G. launches a creator-economy roll-up and buys a talent manager",
@@ -196,44 +204,36 @@ const SECTIONS = [
       url: "https://www.seroundtable.com/openai-chatgpt-ads-updates-42524.html",
       title: "OpenAI adds bidding and targeting controls to ChatGPT ads",
       sum: "The site lists intelligent bidding, new cost targets, geographic flexibility and product set filters among the changes." },
-    { src: "PPC Land", when: "Nov 12",
-      url: "https://ppc.land/youtube-studio-now-turns-16-9-podcast-segments-into-vertical-shorts/",
-      title: "YouTube Studio can now cut widescreen podcast segments into vertical Shorts",
-      sum: "PPC Land reports that the tool converts 16:9 footage for the Shorts feed." },
     { src: "Marketing Dive", when: "Nov 12",
       url: "https://www.marketingdive.com/news/sociable-metas-ai-ads-included-unapproved-discounts/874525/",
       title: "Meta's AI ad tools showed discounts advertisers had not approved",
-      sum: "Marketing Dive reports that a Commerce Manager setting can pull offers detected on a merchant's site into copied ads." },
-    { src: "LinkedIn", when: "Nov 12",
-      url: "https://news.linkedin.com/2026/linkedin-expands-ctv-ads-to-the-uk",
-      title: "LinkedIn brings connected-TV advertising to the UK",
-      sum: "Buyers can target by role, industry and seniority across partners including Paramount+ and Titan OS, LinkedIn says." }
+      sum: "Marketing Dive reports that a Commerce Manager setting can pull offers detected on a merchant's site into copied ads." }
   ]},
   { id: "ai-funding", name: "AI & Funding", wide: true, items: [
-    { src: "TechCrunch", when: "Nov 13",
-      url: "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      title: "Investors and founders expect AI startup funding to shrink after Jensen Huang's exit from Nvidia",
-      sum: "TechCrunch reports that VCs and founders anticipate smaller startup investments following the chief executive's departure." },
+    { src: "Unite.AI", when: "Nov 13",
+      url: "https://www.unite.ai/langchain-secures-300m-series-c-at-3b-valuation-for-agent-governance",
+      title: "LangChain raises $300 million at a $3 billion valuation",
+      sum: "Unite.AI reports the Series C for the AI agent tooling company." },
+    { src: "TIKR", when: "Nov 14",
+      url: "https://www.tikr.com/blog/crowdstrike-doubles-down-on-ai-agents-with-495-million-in-deals-after-a-record-333-million-arr-quarter",
+      title: "CrowdStrike is reported to be spending $495 million on AI-agent security startups",
+      sum: "The stock research site TIKR says the deals cover two companies." },
+    { src: "MLQ.ai", when: "Nov 14",
+      url: "https://mlq.ai/news/cloudflare-open-sources-kitesurf-its-workers-based-browser-engine-for-ai-agents",
+      title: "Cloudflare open-sources Kitesurf, a browser engine for AI agents built on Workers",
+      sum: "The code is released under the Apache 2.0 license, MLQ.ai reports." },
+    { src: "OpenAI", when: "Nov 13",
+      url: "https://openai.com/index/introducing-chatgpt-wallet/",
+      title: "OpenAI introduces a ChatGPT Wallet that needs sign-off on every purchase",
+      sum: "Newsletter coverage of the announcement says the feature is starting with US ChatGPT Pro subscribers." },
+    { src: "Tech.eu", when: "Nov 12",
+      url: "https://tech.eu/2026/11/12/nebuly-raises-21m-series-a-to-turn-ai-investments-into-measurable-results",
+      title: "Nebuly raises $21 million to measure what enterprise AI agents deliver",
+      sum: "Planven led the Series A, and the company says it will expand its sales teams in the US and Europe, Tech.eu reports." },
     { src: "FinTech Global", when: "Nov 13",
       url: "https://fintech.global/2026/11/13/over-600m-was-raised-across-14-deals-this-week",
       title: "Fintech startups raise $602 million across 14 deals in a week",
-      sum: "FinTech Global's tally is led by card issuer Imprint's $130 million round from Khosla Ventures, at a valuation of about $1.9 billion." },
-    { src: "The Morning Brief", when: "Nov 14",
-      url: "https://specterworks.substack.com/p/the-morning-brief-2026-11-14",
-      title: "OpenAI introduces a ChatGPT Wallet that needs sign-off on every purchase",
-      sum: "The newsletter, citing OpenAI's announcement, says the feature is starting with US ChatGPT Pro subscribers." },
-    { src: "Microsoft", when: "Nov 10",
-      url: "https://news.microsoft.com/source/2026/11/10/ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation/",
-      title: "IBM and Microsoft team up on an AI agent platform for regulated industries",
-      sum: "The companies say Imagine Enterprise starts with financial services, insurance and retail and draws on more than 6,000 IBM Consulting agents and assets." },
-    { src: "Amazon Web Services", when: "Nov 12",
-      url: "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime",
-      title: "AWS updates the runtime behind its Bedrock AgentCore agent service",
-      sum: "The changes include hardware-isolated sessions, faster starts and usage-based billing, according to a summary by AI Agents Directory." },
-    { src: "Federal Reserve", when: "Nov 13",
-      url: "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
-      title: "AI tops the worry list in the Fed's latest survey of market contacts",
-      sum: "The Morning Brief reports that 87% of the 23 contacts surveyed cited AI-related risks, up from 50% in the spring." }
+      sum: "FinTech Global's tally is led by card issuer Imprint's $130 million round from Khosla Ventures, at a valuation of about $1.9 billion." }
   ]}
 ];
 
