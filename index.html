@@ -136,24 +136,24 @@ footer{border-top:3px solid var(--ink);padding:16px 0 32px;font-size:13px;color:
 
 <script>
 /* ===== DAILY DATA: everything below this line is what changes each day ===== */
-const EDITION = { date: "Monday, November 16, 2026", updated: "Updated 4:52 a.m. PT" };
+const EDITION = { date: "Tuesday, November 17, 2026", updated: "Updated 4:55 a.m. PT" };
 
 const LEAD = {
-  src: "Yahoo Finance", when: "Nov 13",
-  url: "https://finance.yahoo.com/technology/ai/article/anthropic-ipo-what-we-know-143321078.html",
-  title: "Anthropic's IPO is set to price on Wednesday and start trading on Thursday",
-  sum: "Yahoo Finance reports that the AI company plans to price its shares on Nov. 18 and list on Nasdaq under the ticker ANT on Nov. 19, subject to regulatory clearance. An updated filing covers 825 million shares at $70 to $78 each, and the company is seeking a valuation of roughly $1.4 trillion, according to the report."
+  src: "CoinDesk", when: "Nov 17",
+  url: "https://www.coindesk.com/markets/2026/11/17/nvidia-faces-first-earnings-test-without-jensen-huang-as-ai-stocks-slide",
+  title: "Nvidia reports quarterly results today, its first since Jensen Huang stepped down",
+  sum: "The chipmaker releases third-quarter results after Tuesday's close, with interim CEO Colette Kress leading the company after Huang resigned last week. CoinDesk cites estimates of about $108 billion in revenue and adjusted earnings of $2.47 a share, with the stock trading nearly 40% below its October high."
 };
 
 const ALSO = [
-  { src: "Fortune", when: "Nov 16",
-    url: "https://fortune.com/2026/11/16/nvidia-stock-jensen-huang-return-odds-musk/",
-    title: "Two Nvidia investors ask the board to keep a Jensen Huang return on the table",
-    sum: "Fortune reports that Altimeter's Brad Gerstner and Atreides' Gavin Baker wrote to the board days after Huang resigned as chief executive, and that a petition backing him has nearly 180,000 signatures." },
-  { src: "TechCrunch", when: "Nov 16",
-    url: "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
-    title: "Dreamteam raises $53 million for a CRM built around AI",
-    sum: "TechCrunch reports that the startup, founded by former Freshworks executives, says it has signed more than 100 customers in three months of active selling." }
+  { src: "Yahoo Finance", when: "Nov 13",
+    url: "https://finance.yahoo.com/technology/ai/article/anthropic-ipo-what-we-know-143321078.html",
+    title: "Anthropic's IPO is set to price on Wednesday and start trading on Thursday",
+    sum: "Yahoo Finance reports a range of $70 to $78 a share on Nasdaq under the ticker ANT, with the company seeking a valuation of roughly $1.4 trillion." },
+  { src: "Net Influencer", when: "Nov 16",
+    url: "https://www.netinfluencer.com/instagram-amazon-affiliate-links-reels-feed-posts-ltk-shopmy/",
+    title: "Instagram lets US creators add Amazon affiliate links to Reels and feed posts",
+    sum: "Instagram says creators in Amazon's influencer program can tag up to 30 products per Reel and can also paste LTK or ShopMy collection links, Net Influencer reports." }
 ];
 
 const SECTIONS = [
@@ -162,10 +162,14 @@ const SECTIONS = [
       url: "https://www.forbes.com/sites/pamdanziger/2026/11/15/amazon-stretches-2026-black-friday-cyber-monday-to-12-day-sales-event/",
       title: "Amazon's Black Friday and Cyber Monday event will run for 12 days",
       sum: "Amazon says the sale runs from Nov. 19 through Nov. 30 and that its Alexa for Shopping assistant will be part of it, Forbes reports." },
+    { src: "The Manila Times", when: "Nov 16",
+      url: "https://manilatimes.net/2026/11/16/tmt-newswire/globenewswire/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants/2470932",
+      title: "Commerce rolls out a conversational Shopping Agent for BigCommerce stores",
+      sum: "The company says in a release that the AI agent is reaching eligible merchants ahead of the holiday season." },
     { src: "FXEmpire", when: "Nov 15",
       url: "https://fxempire.com/forecasts/article/the-week-ahead-nvidia-earnings-anthropic-ipo-test-ai-trade-1644719",
       title: "Target and Walmart report quarterly results in the week before Black Friday",
-      sum: "FXEmpire's calendar lists Target for Wednesday morning and Walmart for Thursday morning, after Nvidia's results on Tuesday." },
+      sum: "FXEmpire's calendar lists Target for Wednesday morning and Walmart for Thursday morning." },
     { src: "Marketplace Pulse", when: "Nov 12",
       url: "https://www.marketplacepulse.com/articles/amazon-has-put-four-in-ten-sellers-on-haul",
       title: "About four in ten active Amazon sellers now have listings on Haul",
@@ -177,63 +181,59 @@ const SECTIONS = [
     { src: "PPC Land", when: "Nov 12",
       url: "https://ppc.land/amazon-adds-fba-lead-time-estimates-a-5-day-shipment-may-take-12-at-peak/",
       title: "Amazon starts showing sellers estimated lead times for FBA shipments",
-      sum: "The estimates appear in Manage Shipments, PPC Land reports, as peak-season receiving slows." },
-    { src: "List Perfectly", when: "Nov 12",
-      url: "https://listperfectly.com/selling/reseller-news-november-2026/",
-      title: "eBay Balance replaces Spendable Funds for eligible US sellers",
-      sum: "List Perfectly's reseller roundup, citing eBay's help page, says the change began Nov. 4." }
+      sum: "The estimates appear in Manage Shipments, PPC Land reports, as peak-season receiving slows." }
   ]},
   { id: "advertising", name: "Advertising", items: [
+    { src: "PPC Land", when: "Nov 17",
+      url: "https://ppc.land/amazon-sizes-streaming-tv-budgets-as-commitment-plus-up-to-five-fees/",
+      title: "Amazon documents a budget calculator for DVA+ streaming TV campaigns",
+      sum: "PPC Land reports that the updated help page sets ad group budgets as committed spend plus estimated fees, listed by type but without rates." },
+    { src: "PPC Land", when: "Nov 17",
+      url: "https://ppc.land/amazon-wants-the-clients-legal-name-not-the-agencys-on-new-ad-accounts/",
+      title: "Amazon tells agencies to enter the advertiser's own details on new ad accounts",
+      sum: "The guidance appears on a support page Amazon updated Nov. 16, according to PPC Land." },
+    { src: "Net Influencer", when: "Nov 16",
+      url: "https://www.netinfluencer.com/youtube-adds-estimated-tv-co-views-to-public-view-counts/",
+      title: "YouTube view counts now include estimated co-viewers on TV screens",
+      sum: "YouTube says the change does not affect Partner Program payouts and that creators get a private co-view rate metric in Studio, Net Influencer reports." },
     { src: "Net Influencer", when: "Nov 16",
       url: "https://www.netinfluencer.com/tiktok-adds-premier-tier-to-creative-partner-program-extends-recognition-to-talent-agencies-and-ugc-firms/",
       title: "TikTok adds a top tier for creative partners in its marketing partner program",
-      sum: "Net Influencer reports that the creator marketing specialty now also covers talent agencies and user-generated-content firms, with qualification handled through TikTok One." },
+      sum: "Net Influencer reports that the creator marketing specialty now also covers talent agencies and user-generated-content firms." },
     { src: "PPC Land", when: "Nov 15",
       url: "https://ppc.land/amazon-puts-sponsored-products-ads-inside-audible-free-during-beta/",
       title: "Amazon's Sponsored Products audiobook ads now appear inside Audible in the US",
       sum: "Amazon says ads served on Audible are not charged during the open beta, PPC Land reports." },
-    { src: "PPC Land", when: "Nov 15",
-      url: "https://ppc.land/youtube-drops-the-word-skip-from-some-ad-buttons-in-favour-of-next/",
-      title: "Some YouTube ads show a button labeled Next where Skip used to be",
-      sum: "PPC Land says the change was spotted by an advertiser and that neither YouTube nor Google has announced it or explained what the button does." },
-    { src: "PPC Land", when: "Nov 15",
-      url: "https://ppc.land/googles-new-parameter-shows-when-an-exact-click-was-really-ai-max/",
-      title: "A new Google Ads tracking parameter separates AI Max matches from exact-match clicks",
-      sum: "PPC Land reports that Google's help page documents a search-term match type value, though Google has given no date for it." },
-    { src: "PPC Land", when: "Nov 15",
-      url: "https://ppc.land/google-opens-pmax-household-income-exclusions-to-select-advertisers/",
-      title: "Google's help pages list household income exclusions for Performance Max as a beta",
-      sum: "The wording says the control is available to select advertisers, according to PPC Land." },
-    { src: "Google", when: "Nov 11",
-      url: "https://support.google.com/adspolicy/answer/18873108",
-      title: "Google updates its personalized advertising policy",
-      sum: "Google says the change clarifies that advertisers may not target users based on interest in categories its ad network prohibits." }
+    { src: "PPC Land", when: "Nov 12",
+      url: "https://ppc.land/amazon-forces-prediction-markets-through-gambling-ad-verification/",
+      title: "Amazon Ads puts prediction markets under its gambling verification rules",
+      sum: "PPC Land reports that the revised policy requires real-money advertisers to prove they are licensed or lawful in each target country." }
   ]},
   { id: "ai-funding", name: "AI & Funding", wide: true, items: [
+    { src: "The Manila Times", when: "Nov 17",
+      url: "https://www.manilatimes.net/2026/11/17/tmt-newswire/pr-newswire/physical-ai-leader-agile-robots-raises-500-million-series-f-at-85-billion-valuation-to-accelerate-global-growth/2471576",
+      title: "Agile Robots raises $500 million at an $8.5 billion valuation",
+      sum: "The Munich robotics company says in a release that SoftBank led the Series F, with Nvidia and Hitachi also investing." },
+    { src: "TechCrunch", when: "Nov 16",
+      url: "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+      title: "AI security startup Corma reaches a $1 billion valuation",
+      sum: "TechCrunch reports a $125 million Series A led by NEA, about three months after the company introduced its product." },
+    { src: "TechCrunch", when: "Nov 16",
+      url: "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+      title: "Dreamteam raises $53 million for a CRM built around AI",
+      sum: "TechCrunch reports that the startup, founded by former Freshworks executives, says it has signed more than 100 customers." },
+    { src: "Outsource Accelerator", when: "Nov 17",
+      url: "https://news.outsourceaccelerator.com/hatz-ai-series-a/",
+      title: "Hatz AI raises $24 million to sell AI tools through managed service providers",
+      sum: "Outsource Accelerator reports that Nadia Partners led the Series A and that Hatz says its active partner count tripled in a year." },
     { src: "TechCrunch", when: "Nov 15",
       url: "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
       title: "European venture firm Plural raises 1 billion euros in new capital",
-      sum: "TechCrunch reports that two thirds will go to the firm's third early-stage fund and the rest to a fund for follow-on investments." },
-    { src: "TechCrunch", when: "Nov 15",
-      url: "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-      title: "Indian chip startup Bharat Semi raises a $24 million seed round",
-      sum: "Info Edge Group, South Park Commons and Indus Bridge Ventures led the round for the pre-revenue sensor company, TechCrunch reports." },
-    { src: "TechCrunch", when: "Nov 15",
-      url: "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-      title: "Apple launches a research app to study how people use AI for health questions",
-      sum: "TechCrunch reports that the app is built with OpenEvidence and that Apple aims to enroll up to 200,000 US participants." },
+      sum: "TechCrunch reports that two thirds will go to the firm's third early-stage fund and the rest to follow-on investments." },
     { src: "Staffing Industry Analysts", when: "Nov 13",
       url: "https://www.staffingindustry.com/news/global-daily-news/mercor-lands-750m-funding-round-valuing-staffing-platform-at-20b",
       title: "Mercor raises $750 million at a $20 billion valuation",
-      sum: "Staffing Industry Analysts reports the round for the AI-focused staffing platform." },
-    { src: "Unite.AI", when: "Nov 13",
-      url: "https://www.unite.ai/langchain-secures-300m-series-c-at-3b-valuation-for-agent-governance",
-      title: "LangChain raises $300 million at a $3 billion valuation",
-      sum: "Unite.AI reports the Series C for the AI agent tooling company." },
-    { src: "AI Business", when: "Nov 11",
-      url: "https://aibusiness.com/generative-ai/openai-s-businesses-in-chatgpt-targets-enterprise-trust",
-      title: "OpenAI launches a beta that lets companies manage how they appear in ChatGPT",
-      sum: "AI Business reports that Businesses in ChatGPT includes a hub for company information and an agent that answers users' questions, and that Shopify merchants can connect." }
+      sum: "Staffing Industry Analysts reports the round for the AI-focused staffing platform." }
   ]}
 ];
 
