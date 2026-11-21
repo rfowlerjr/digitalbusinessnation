@@ -136,44 +136,44 @@ footer{border-top:3px solid var(--ink);padding:16px 0 32px;font-size:13px;color:
 
 <script>
 /* ===== DAILY DATA: everything below this line is what changes each day ===== */
-const EDITION = { date: "Friday, November 20, 2026", updated: "Updated 4:50 a.m. PT" };
+const EDITION = { date: "Saturday, November 21, 2026", updated: "Updated 4:52 a.m. PT" };
 
 const LEAD = {
-  src: "Forbes", when: "Nov 19",
-  url: "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-nasdaq-futures-jump-as-record-stock-debut-could-open-25-higher/",
-  title: "Anthropic ends its first day on Nasdaq at $97, about 17% above its IPO price",
-  sum: "Forbes reports that the AI company's shares closed above the $83 price at which it sold 980 million shares, raising about $81.3 billion. Anthropic's filing shows first-half 2026 revenue of $16.3 billion, up from $1.2 billion a year earlier, according to Forbes."
+  src: "Retail Dive", when: "Nov 19",
+  url: "https://www.retaildive.com/news/walmart-ecommerce-boom-fulfillment-speed-q3-earnings/875166/",
+  title: "Walmart's U.S. online sales jump 23% as it leans on faster delivery",
+  sum: "Retail Dive reports Walmart's third-quarter revenue rose 5.2% to $188.8 billion, and the retailer raised its full-year sales growth forecast to 4.9% to 5.2%. Executives said 96% of U.S. households can now be reached in three hours or less."
 };
 
 const ALSO = [
-  { src: "CNBC", when: "Nov 19",
-    url: "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
-    title: "Intuit agrees to sell Mailchimp to Bending Spoons for $3.68 billion",
-    sum: "CNBC reports the cash-and-stock deal values the email marketing platform well below the $12 billion Intuit paid in 2021." },
-  { src: "The Wall Street Journal", when: "Nov 19",
-    url: "https://www.wsj.com/business/earnings/temu-owner-reports-flat-profit-revenue-as-challenges-continue-039f7d3e",
-    title: "Temu owner PDD posts flat quarterly revenue, missing estimates",
-    sum: "The Journal reports third-quarter revenue of about $16.2 billion against expectations near $17.3 billion, as Temu's user base shrinks." }
+  { src: "Shopifreaks", when: "Nov 20",
+    url: "https://www.shopifreaks.com/us-advertisers-spent-an-estimated-70-7m-on-chatgpt-ads-in-october-more-than-double-aprils-total-with-developer-tools-leading/",
+    title: "U.S. ChatGPT ad spending more than doubled from April to October, estimate says",
+    sum: "Shopifreaks cites AdClarity's modeled estimate of $70.7 million in U.S. spend in October, led by developer software advertisers." },
+  { src: "Search Engine Roundtable", when: "Nov 19",
+    url: "https://www.seroundtable.com/microsoft-ads-in-ai-overviews-on-bing-42578.html",
+    title: "Microsoft confirms ads now run inside Bing's AI Overviews",
+    sum: "Search Engine Roundtable reports the placements draw from existing campaigns such as Performance Max in every market except China." }
 ];
 
 const SECTIONS = [
   { id: "commerce", name: "Commerce", items: [
+    { src: "SBE Council", when: "Nov 20",
+      url: "https://sbecouncil.org/2026/11/20/small-business-saturday-2026-is-your-business-ready-consumers-are-ready-to-shop-small/",
+      title: "Shoppers' intent to buy from small businesses this holiday is the highest since 2012, survey finds",
+      sum: "The council cites an American Express study in which 88% of U.S. consumers say they are likely to shop small and 35% plan to use AI to find small businesses." },
+    { src: "Search Engine Roundtable", when: "Nov 20",
+      url: "https://www.seroundtable.com/google-chatgpt-coupon-codes-42581.html",
+      title: "Google and ChatGPT start showing coupon codes directly in AI answers",
+      sum: "Search Engine Roundtable reports SEOs flagged the change as a threat to coupon and affiliate sites that rely on clicks." },
     { src: "Retail Dive", when: "Nov 19",
       url: "https://www.retaildive.com/news/target-ai-shopping-assistant-drives-sales-q3/875106/",
       title: "Target says its AI shopping assistant is lifting sales",
       sum: "Retail Dive reports CEO Michael Fiddelke pointed to early success from the Ask Target beta in third-quarter results." },
-    { src: "The Wall Street Journal", when: "Nov 19",
-      url: "https://www.wsj.com/business/earnings/alibaba-earnings-rebound-sharply-as-ai-profitability-improves-70fd90d5",
-      title: "Alibaba's profit roughly triples as AI and e-commerce improve",
-      sum: "The Journal reports quarterly revenue rose 10% to about $40.7 billion." },
     { src: "Common Thread Collective", when: "Nov 19",
       url: "https://commonthreadco.com/blogs/coachs-corner/shopify-just-opened-the-shop-app-to-every-store-not-just-shopify-payments-users",
       title: "Shopify opens the Shop app to stores that don't use Shopify Payments",
       sum: "The agency writes that paid Shop Campaigns remain limited to merchants on Shopify Payments." },
-    { src: "Retail Dive", when: "Nov 19",
-      url: "https://www.retaildive.com/news/tractor-supply-uber-same-day-delivery/874748/",
-      title: "Tractor Supply widens same-day delivery through Uber",
-      sum: "Retail Dive reports the retailer is boosting its same-day delivery options." },
     { src: "New York Post", when: "Nov 19",
       url: "https://nypost.com/2026/11/19/business/in-new-campaign-amazon-warns-nyc-customers-they-face-price-hikes-up-to-5-for-every-order-if-delivery-bill-is-passed/",
       title: "Amazon tells New York City customers a delivery-worker bill could add up to $5 per order",
@@ -184,6 +184,22 @@ const SECTIONS = [
       sum: "The marketplace digest says most changes start Jan. 15, 2027, and also covers new EU customs fees on low-value parcels." }
   ]},
   { id: "advertising", name: "Advertising", items: [
+    { src: "Search Engine Roundtable", when: "Nov 20",
+      url: "https://www.seroundtable.com/bing-ads-made-with-ai-label-42579.html",
+      title: "Microsoft Advertising adds a \"Made with AI\" label to some image ads",
+      sum: "Search Engine Roundtable reports advertisers can now declare AI-generated images and video and opt into a visible watermark." },
+    { src: "Digiday", when: "Nov 19",
+      url: "https://digiday.com/marketing/mail-metro-medias-next-creator-play-is-representing-them/",
+      title: "Daily Mail's ad sales arm plans an in-house creator talent agency",
+      sum: "Digiday reports Mail Metro Media hopes to launch the agency by year-end after signing its first seven-figure creator deal." },
+    { src: "Digiday", when: "Nov 18",
+      url: "https://digiday.com/media/some-creators-are-turning-youtube-back-catalogs-into-sizable-paychecks/",
+      title: "Creators are earning more by licensing old YouTube videos to other platforms",
+      sum: "Digiday reports one true-crime channel made $154,000 in September from outlets like Spotify and TV apps, according to its distributor Motion Society." },
+    { src: "Digiday", when: "Nov 20",
+      url: "https://digiday.com/media/openai-rewrites-chatgpt-business-hub-terms-after-legal-language-raises-concerns/",
+      title: "OpenAI revises the terms for its ChatGPT Business Hub",
+      sum: "Digiday reports the rewrite followed concerns raised about the original legal language." },
     { src: "PPC Land", when: "Nov 19",
       url: "https://ppc.land/inmobi-lets-seven-ai-agents-run-small-firms-google-meta-and-chatgpt-ads/",
       title: "InMobi launches AI agents that run small businesses' ads across Google, Meta and ChatGPT",
@@ -191,37 +207,21 @@ const SECTIONS = [
     { src: "Tubefilter", when: "Nov 19",
       url: "https://www.tubefilter.com/2026/11/19/marketers-will-spend-116b-on-creators-in-2026-theyre-cannibalizing-other-budgets-to-do-it/",
       title: "Creator spending growth is coming mostly out of other ad budgets, report says",
-      sum: "Tubefilter cites Madison and Wall's estimate that marketers will spend $116 billion on creators this year, largely reallocated from TV and performance media." },
-    { src: "Net Influencer", when: "Nov 20",
-      url: "https://netinfluencer.com/creator-affiliate-platform-levanta-adds-tiktok-shop-alongside-amazon-walmart",
-      title: "Levanta adds TikTok Shop to its creator affiliate platform",
-      sum: "Net Influencer reports brands can now manage TikTok Shop programs alongside Amazon, Walmart, Shopify and Wayfair." },
-    { src: "Digiday", when: "Nov 20",
-      url: "https://digiday.com/media/openai-rewrites-chatgpt-business-hub-terms-after-legal-language-raises-concerns/",
-      title: "OpenAI revises the terms for its ChatGPT Business Hub",
-      sum: "Digiday reports the rewrite followed concerns raised about the original legal language." },
-    { src: "Search Engine Roundtable", when: "Nov 19",
-      url: "https://www.seroundtable.com/recap-11-19-2026-42575.html",
-      title: "Google AdSense will combine its search ads policy sets in January",
-      sum: "Search Engine Roundtable reports the merged policies take effect Jan. 17, 2027." },
-    { src: "Net Influencer", when: "Nov 18",
-      url: "https://netinfluencer.com/disney-will-add-tiktok-creator-videos-in-december-timed-to-avengers-doomsday",
-      title: "Disney+ will start carrying invited TikTok creators' videos in December",
-      sum: "Net Influencer reports that Disney's shareholder letter caps the videos at 10 minutes and bars AI depictions of Disney characters." }
+      sum: "Tubefilter cites Madison and Wall's estimate that marketers will spend $116 billion on creators this year, largely reallocated from TV and performance media." }
   ]},
   { id: "ai-funding", name: "AI & Funding", wide: true, items: [
+    { src: "Shopifreaks", when: "Nov 20",
+      url: "https://www.shopifreaks.com/anthropic-offers-discounts-above-30-to-customers-who-commit-a-share-of-their-ai-budgets-then-asks-for-invoices-to-prove-it/",
+      title: "Anthropic reportedly offers big discounts to customers that commit part of their AI budgets",
+      sum: "Citing The Information, Shopifreaks reports discounts can top 30% and some customers are asked for invoices as proof." },
+    { src: "Modern Industrials", when: "Nov 19",
+      url: "https://www.modernindustrials.com/blog/modern-industrials-raises-6m",
+      title: "Modern Industrials raises $6 million for AI agents aimed at manufacturers and distributors",
+      sum: "The company says Glasswing Ventures led the seed round for software that handles quoting, order entry and procurement." },
     { src: "TechCrunch", when: "Nov 19",
       url: "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
       title: "Everful raises $48.5 million to link smaller retailers with Chinese factories",
       sum: "TechCrunch reports the company was started by former Alibaba executives." },
-    { src: "Tech.eu", when: "Nov 19",
-      url: "https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/",
-      title: "London's Boltz raises a $110 million Series A",
-      sum: "Tech.eu reports that Bessemer led the round." },
-    { src: "SiliconANGLE", when: "Nov 19",
-      url: "https://siliconangle.com/2026/11/19/industrial-monitoring-startup-brightai-closes-97m-investment/",
-      title: "Industrial monitoring startup BrightAI closes a $97 million investment",
-      sum: "SiliconANGLE reports Smith Point led the round." },
     { src: "Fortune", when: "Nov 19",
       url: "https://fortune.com/2026/11/19/series-a-funding-skyrocketed-2026-founders-arent-getting-more-chances/",
       title: "Series A dollars are up sharply this year, but the number of deals is not",
@@ -238,13 +238,13 @@ const SECTIONS = [
 ];
 
 const DATES = [
-  ["Nov 20", "Shopify's IP allowlist becomes mandatory for public apps"],
   ["Nov 23", "Walmart's second holiday event opens online; Etsy's Cyber Specials sale begins"],
   ["Nov 27", "Black Friday"],
   ["Nov 28", "Small Business Saturday"],
   ["Nov 30", "Cyber Monday; Amazon's 12-day Black Friday event ends"],
   ["Dec 16", "Etsy's updated Terms of Use, including AI training rights over seller content, take effect"],
-  ["Jan 15", "Most of Amazon's 2027 U.S. FBA fee changes take effect"]
+  ["Jan 15", "Most of Amazon's 2027 U.S. FBA fee changes take effect"],
+  ["Jan 17", "Google AdSense merges its search ads policy sets"]
 ];
 /* ===== END DAILY DATA ===== */
 
