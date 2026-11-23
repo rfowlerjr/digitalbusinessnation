@@ -136,28 +136,36 @@ footer{border-top:3px solid var(--ink);padding:16px 0 32px;font-size:13px;color:
 
 <script>
 /* ===== DAILY DATA: everything below this line is what changes each day ===== */
-const EDITION = { date: "Sunday, November 22, 2026", updated: "Updated 4:46 a.m. PT" };
+const EDITION = { date: "Monday, November 23, 2026", updated: "Updated 4:51 a.m. PT" };
 
 const LEAD = {
-  src: "The Next Web", when: "Nov 21",
-  url: "https://thenextweb.com/news/etsy-ai-terms-sellers-close-shops-revise-policy",
-  title: "Etsy says it will rework its AI training terms after sellers shut their shops",
-  sum: "The Next Web reports that Etsy's new terms, due Dec. 16, let Etsy and its partners use seller content to train AI, and some longtime sellers closed their stores in protest. An Etsy vice president said the company will not train models to copy sellers' work and will send revised terms soon."
+  src: "PYMNTS", when: "Nov 22",
+  url: "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-nears-7-5-billion-purchase-of-ai-startup-decart/",
+  title: "Amazon is reported to be close to buying AI startup Decart for about $7.5 billion",
+  sum: "Citing the Financial Times, PYMNTS reports that talks are at an advanced stage but could still fall apart, and Amazon declined to comment. Decart makes software that helps AI models run more efficiently on chips, which the FT said would help Amazon Web Services compete with Nvidia."
 };
 
 const ALSO = [
-  { src: "Unite.AI", when: "Nov 20",
-    url: "https://www.unite.ai/potential-cognition-ai-round-would-raise-2b-plus-at-75b-valuation/",
-    title: "Cognition is reportedly in talks to raise $2 billion or more at a $75 billion valuation",
-    sum: "Citing Bloomberg, Unite.AI reports the talks with the AI coding company are ongoing and could still change." },
-  { src: "PPC Land", when: "Nov 21",
-    url: "https://ppc.land/alibaba-and-temu-cut-marketing-as-ai-engines-start-handing-out-coupons",
-    title: "Alibaba and Temu's parent sharply cut marketing spending last quarter",
-    sum: "PPC Land reports Alibaba's sales and marketing expense fell 38% and PDD's marketing spend fell 17% in the quarter ended Sept. 30." }
+  { src: "CNBC", when: "Nov 19",
+    url: "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
+    title: "Intuit agrees to sell Mailchimp to Bending Spoons for $3.68 billion",
+    sum: "The email marketing platform goes for well under the roughly $12 billion Intuit paid for it in 2021." },
+  { src: "PPC Land", when: "Nov 22",
+    url: "https://ppc.land/google-ai-mode-ads-appear-as-deep-as-the-fourth-follow-up-question/",
+    title: "Ads in Google's AI Mode are showing up several questions into a conversation",
+    sum: "PPC Land cites Search Engine Roundtable tests that found sponsored product carousels as late as the fourth follow-up question." }
 ];
 
 const SECTIONS = [
   { id: "commerce", name: "Commerce", items: [
+    { src: "Retail Dive", when: "Nov 20",
+      url: "https://www.retaildive.com/news/thredup-tiktok-shop-livestream-shopping/875247/",
+      title: "ThredUp expands livestream selling on TikTok Shop",
+      sum: "Retail Dive reports the resale marketplace runs 10 live shows a week on TikTok Shop and plans to double that soon." },
+    { src: "Retail Dive", when: "Nov 20",
+      url: "https://www.retaildive.com/news/container-store-neighborhood-intelligence-cybersecurity-incident/875342/",
+      title: "The Container Store restores its website after a cybersecurity incident",
+      sum: "Retail Dive reports the company paused online ordering during the incident and says customer payment data was not affected." },
     { src: "The Washington Times", when: "Nov 20",
       url: "https://www.washingtontimes.com/news/2026/nov/20/black-friday-2026-running-list-major-retailers-sales-plans/",
       title: "A rundown of when major retailers' Black Friday sales start and end",
@@ -170,58 +178,54 @@ const SECTIONS = [
       url: "https://www.seroundtable.com/google-chatgpt-coupon-codes-42581.html",
       title: "Google and ChatGPT start showing coupon codes directly in AI answers",
       sum: "Search Engine Roundtable reports SEOs flagged the change as a threat to coupon and affiliate sites that rely on clicks." },
-    { src: "NL Times", when: "Nov 17",
-      url: "https://nltimes.nl/2026/11/17/consumer-watchdog-finds-safety-violations-19-30-toys-temu-shein-others",
-      title: "Dutch regulator says most toddler toys it bought from Temu, Shein and others failed safety rules",
-      sum: "NL Times reports the NVWA found violations in 19 of 30 toys bought from non-EU marketplaces, often loose small parts." },
-    { src: "Common Thread Collective", when: "Nov 19",
-      url: "https://commonthreadco.com/blogs/coachs-corner/shopify-just-opened-the-shop-app-to-every-store-not-just-shopify-payments-users",
-      title: "Shopify opens the Shop app to stores that don't use Shopify Payments",
-      sum: "The agency writes that paid Shop Campaigns remain limited to merchants on Shopify Payments." },
     { src: "ChannelUnity", when: "Nov 17",
       url: "https://www.channelunity.com/2026/11/17/marketplace-news-digest-november-2026/",
       title: "Amazon's U.S. FBA fees will rise about 19 cents a unit on average in 2027",
       sum: "The marketplace digest says most changes start Jan. 15, 2027, and also covers new EU customs fees on low-value parcels." }
   ]},
   { id: "advertising", name: "Advertising", items: [
-    { src: "Search Engine Journal", when: "Nov 18",
-      url: "https://www.searchenginejournal.com/microsoft-rolls-out-its-biggest-bidding-upgrade-in-a-decade/597963/",
-      title: "Microsoft Advertising rebuilds its automated bidding models",
-      sum: "Search Engine Journal reports Microsoft's own tests showed about 10% more conversion value per click at similar return on ad spend." },
-    { src: "Shopifreaks", when: "Nov 20",
-      url: "https://www.shopifreaks.com/us-advertisers-spent-an-estimated-70-7m-on-chatgpt-ads-in-october-more-than-double-aprils-total-with-developer-tools-leading/",
-      title: "U.S. ChatGPT ad spending more than doubled from April to October, estimate says",
-      sum: "Shopifreaks cites AdClarity's modeled estimate of $70.7 million in U.S. spend in October, led by developer software advertisers." },
+    { src: "PPC Land", when: "Nov 22",
+      url: "https://ppc.land/google-ads-surcharges-hit-3-in-france-and-italy-from-january-2027/",
+      title: "Google will raise its ad surcharges in France and Italy to 3% in January",
+      sum: "PPC Land reports Google's help page ties the increases to digital services taxes, while Turkey's surcharge falls to 2.25%." },
+    { src: "PPC Land", when: "Nov 22",
+      url: "https://ppc.land/google-lets-a-like-stand-in-for-5-seconds-of-viewing-in-shorts-conversions/",
+      title: "Likes, comments and shares on YouTube Shorts ads now count as engagement",
+      sum: "PPC Land reports, citing a Google help page, that these taps now count toward engaged-view conversions alongside 5 seconds of viewing." },
+    { src: "PPC Land", when: "Nov 22",
+      url: "https://ppc.land/google-ai-summary-test-says-4-search-advertisers-are-not-browser-tools",
+      title: "Google appears to be testing AI-written summaries above mobile search ads",
+      sum: "PPC Land reports Google has not confirmed the test or said whether advertisers can review or turn off the text." },
     { src: "Search Engine Roundtable", when: "Nov 19",
       url: "https://www.seroundtable.com/microsoft-ads-in-ai-overviews-on-bing-42578.html",
       title: "Microsoft confirms ads now run inside Bing's AI Overviews",
       sum: "Search Engine Roundtable reports the placements draw from existing campaigns such as Performance Max in every market except China." },
-    { src: "Net Influencer", when: "Nov 20",
-      url: "https://www.netinfluencer.com/gta-vi-launch-sets-streaming-records-as-twitch-moves-to-keep-advertisers-on-board/",
-      title: "Twitch works on keeping brand ads away from mature content as GTA VI streams set records",
-      sum: "Net Influencer cites preliminary Streams Charts data showing a peak of 7.91 million concurrent viewers across platforms." },
-    { src: "Search Engine Roundtable", when: "Nov 20",
-      url: "https://seroundtable.com/video-11-20-2026-42577.html",
-      title: "FBI warns about SEO poisoning, a tactic that pushes malicious sites up in search results",
-      sum: "Search Engine Roundtable's weekly recap says the FBI tied the scheme to $28 million in ransomware payments." },
-    { src: "Search Engine Roundtable", when: "Nov 20",
-      url: "https://www.seroundtable.com/bing-ads-made-with-ai-label-42579.html",
-      title: "Microsoft Advertising adds a \"Made with AI\" label to some image ads",
-      sum: "Search Engine Roundtable reports advertisers can now declare AI-generated images and video and opt into a visible watermark." }
+    { src: "Shopifreaks", when: "Nov 20",
+      url: "https://www.shopifreaks.com/us-advertisers-spent-an-estimated-70-7m-on-chatgpt-ads-in-october-more-than-double-aprils-total-with-developer-tools-leading/",
+      title: "U.S. ChatGPT ad spending more than doubled from April to October, estimate says",
+      sum: "Shopifreaks cites AdClarity's modeled estimate of $70.7 million in U.S. spend in October, led by developer software advertisers." },
+    { src: "Search Engine Journal", when: "Nov 18",
+      url: "https://www.searchenginejournal.com/microsoft-rolls-out-its-biggest-bidding-upgrade-in-a-decade/597963/",
+      title: "Microsoft Advertising rebuilds its automated bidding models",
+      sum: "Search Engine Journal reports Microsoft's own tests showed about 10% more conversion value per click at similar return on ad spend." }
   ]},
   { id: "ai-funding", name: "AI & Funding", wide: true, items: [
+    { src: "The Next Web", when: "Nov 23",
+      url: "https://thenextweb.com/news/agon-70m-series-a-synthetic-battlefield",
+      title: "London defense simulation startup Agon raises a $70 million Series A",
+      sum: "TNW reports Northzone led the round at a reported $450 million valuation, less than a year after the company was founded." },
+    { src: "The Next Web", when: "Nov 23",
+      url: "https://thenextweb.com/news/aevius-22m-insight-partners-mass-general-brigham-clinical-ai",
+      title: "Clinical AI spinout Aevius raises a $22 million seed round",
+      sum: "TNW reports Insight Partners led the round for the Mass General Brigham spinout, which sells to health systems, insurers and drugmakers." },
+    { src: "Bloomberg", when: "Nov 22",
+      url: "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+      title: "Ant Group leads a $100 million round in Chinese robotics startup Simplexity",
+      sum: "Bloomberg reports the round values the physical-AI company at $1.6 billion." },
     { src: "Shopifreaks", when: "Nov 20",
       url: "https://www.shopifreaks.com/anthropic-offers-discounts-above-30-to-customers-who-commit-a-share-of-their-ai-budgets-then-asks-for-invoices-to-prove-it/",
       title: "Anthropic reportedly offers big discounts to customers that commit part of their AI budgets",
       sum: "Citing The Information, Shopifreaks reports discounts can top 30% and some customers are asked for invoices as proof." },
-    { src: "Elets CIO", when: "Nov 22",
-      url: "https://cio.eletsonline.com/artificial-intelligence/unsiloed-ai-seed-funding/77074/",
-      title: "Document AI startup Unsiloed AI raises a $7.5 million seed round",
-      sum: "Elets reports Felicis led the round, with Y Combinator among the other backers." },
-    { src: "Business Standard", when: "Nov 18",
-      url: "https://www.business-standard.com/companies/news/ai-startup-humyn-labs-raises-47-million-in-series-a-funding-round-126111800765_1.html",
-      title: "Humyn Labs raises $47 million in equity and debt",
-      sum: "Business Standard reports Accel led the $26 million equity portion of the Bengaluru AI startup's Series A, alongside $21 million in venture debt." },
     { src: "TechCrunch", when: "Nov 19",
       url: "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
       title: "Everful raises $48.5 million to link smaller retailers with Chinese factories",
@@ -229,11 +233,7 @@ const SECTIONS = [
     { src: "Fortune", when: "Nov 19",
       url: "https://fortune.com/2026/11/19/series-a-funding-skyrocketed-2026-founders-arent-getting-more-chances/",
       title: "Series A dollars are up sharply this year, but the number of deals is not",
-      sum: "Fortune cites Crunchbase data showing U.S. startups raised $42 billion in Series A rounds through October, up 60% from a year earlier." },
-    { src: "TechCrunch", when: "Nov 18",
-      url: "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation",
-      title: "Spend management startup Payhawk raises $280 million at a $2 billion valuation",
-      sum: "TechCrunch reports that Goldman Sachs' growth equity arm led the Series C." }
+      sum: "Fortune cites Crunchbase data showing U.S. startups raised $42 billion in Series A rounds through October, up 60% from a year earlier." }
   ]}
 ];
 
@@ -241,9 +241,9 @@ const DATES = [
   ["Nov 23", "Walmart's main Black Friday event begins; Etsy's Cyber Specials sale begins"],
   ["Nov 27", "Black Friday"],
   ["Nov 28", "Small Business Saturday"],
-  ["Nov 29", "Target's Black Friday sale ends"],
   ["Nov 30", "Cyber Monday; Amazon's 12-day Black Friday event ends"],
   ["Dec 16", "Etsy's updated Terms of Use, including AI training rights over seller content, are due to take effect"],
+  ["Jan 1", "Google Ads surcharges rise to 3% in France and Italy and fall to 2.25% in Turkey"],
   ["Jan 15", "Most of Amazon's 2027 U.S. FBA fee changes take effect"]
 ];
 /* ===== END DAILY DATA ===== */
