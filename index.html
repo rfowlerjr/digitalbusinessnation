@@ -136,24 +136,24 @@ footer{border-top:3px solid var(--ink);padding:16px 0 32px;font-size:13px;color:
 
 <script>
 /* ===== DAILY DATA: everything below this line is what changes each day ===== */
-const EDITION = { date: "Tuesday, November 24, 2026", updated: "Updated 4:51 a.m. PT" };
+const EDITION = { date: "Wednesday, November 25, 2026", updated: "Updated 4:52 a.m. PT" };
 
 const LEAD = {
-  src: "TechCrunch", when: "Nov 23",
-  url: "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-  title: "Customer service AI company Sierra raises $1.75 billion at a $30 billion valuation",
-  sum: "TechCrunch reports the Series F, co-led by Greenoaks and Lightspeed Venture Partners, doubles the valuation Sierra reached about six months ago. The company has said its pay-per-outcome pricing helped double its annualized revenue to $400 million in five months."
+  src: "Retail Dive", when: "Nov 24",
+  url: "https://www.retaildive.com/news/black-friday-retailers-tech-outages-ai/875541/",
+  title: "Retailers head into Black Friday after a run of major tech outages",
+  sum: "Retail Dive reports that recent outages at companies including Microsoft, JPMorgan Chase and United Airlines have raised the stakes for retailers' systems ahead of Cyber Week, with some long outages linked to rushed fixes for AI-discovered vulnerabilities. A Gartner analyst told the publication that retailers usually freeze major changes over the holidays but may have little choice when a serious flaw surfaces."
 };
 
 const ALSO = [
-  { src: "TechCrunch", when: "Nov 23",
-    url: "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
-    title: "Amazon confirms it is acquiring Decart's AI optimization technology and team",
-    sum: "TechCrunch reports Amazon did not disclose a price, while Bloomberg put the deal at about $7.5 billion." },
-  { src: "Social Media Today", when: "Nov 23",
-    url: "https://www.socialmediatoday.com/news/pinterest-announces-partnership-with-microsoft-ads/875553/",
-    title: "Microsoft Advertising campaigns can now buy ad space on Pinterest",
-    sum: "Social Media Today reports the placements cover Pinterest's home feed, search and related Pins, starting in North America, Australia and New Zealand." }
+  { src: "Skift", when: "Nov 24",
+    url: "https://skift.com/2026/11/24/google-folds-hotel-ads-into-search-upending-how-properties-bid-and-measure/",
+    title: "Google will fold its standalone hotel ad campaigns into Search campaigns",
+    sum: "Skift reports, citing a Google migration guide, that hotel campaigns will convert automatically in the first half of 2027 and some bidding options will be reset to manual bids." },
+  { src: "SiliconANGLE", when: "Nov 24",
+    url: "https://siliconangle.com/2026/11/24/zipher-lands-53m-to-put-ai-agents-not-data-engineers-in-charge-of-data-workloads/",
+    title: "Zipher raises $53 million for AI agents that run enterprise data workloads",
+    sum: "SiliconANGLE reports the total combines the company's seed and Series A funding." }
 ];
 
 const SECTIONS = [
@@ -162,6 +162,10 @@ const SECTIONS = [
       url: "https://www.retaildive.com/news/black-friday-cyber-monday-shopping-projected-to-slip/875473/",
       title: "Fewer people are expected to shop over Thanksgiving weekend this year, NRF says",
       sum: "Retail Dive reports the NRF projects 182.7 million shoppers, down more than 2%, as more holiday buying happens earlier in November." },
+    { src: "Practical Ecommerce", when: "Nov 24",
+      url: "https://www.practicalecommerce.com/new-ecommerce-tools-november-24-2026",
+      title: "This week's new seller tools include AI site builders and shipping helpers",
+      sum: "Practical Ecommerce's roundup covers launches such as GoDaddy's Airo AI Builder, an AI customs-description tool from DHL Express and Temu's pay-by-bank rollout in Europe." },
     { src: "Retail Dive", when: "Nov 23",
       url: "https://www.retaildive.com/news/amazon-enlists-customers-in-fight-against-nyc-delivery-protection-act/875451/",
       title: "Amazon warns New York City shoppers a delivery worker bill could add up to $5 an order",
@@ -177,63 +181,59 @@ const SECTIONS = [
     { src: "Retail Dive", when: "Nov 19",
       url: "https://www.retaildive.com/news/walmart-ecommerce-boom-fulfillment-speed-q3-earnings/875166/",
       title: "Walmart's U.S. online sales jump 23% as it leans on faster delivery",
-      sum: "Retail Dive reports the retailer also raised its full-year sales growth forecast to 4.9% to 5.2%." },
-    { src: "Retail Dive", when: "Nov 20",
-      url: "https://www.retaildive.com/news/thredup-tiktok-shop-livestream-shopping/875247/",
-      title: "ThredUp expands livestream selling on TikTok Shop",
-      sum: "Retail Dive reports the resale marketplace runs 10 live shows a week on TikTok Shop and plans to double that soon." }
+      sum: "Retail Dive reports the retailer also raised its full-year sales growth forecast to 4.9% to 5.2%." }
   ]},
   { id: "advertising", name: "Advertising", items: [
+    { src: "Search Engine Roundtable", when: "Nov 23",
+      url: "https://www.seroundtable.com/google-ads-purchase-signal-annotations-42587.html",
+      title: "Google Shopping ads can now show how many units a product sold recently",
+      sum: "Search Engine Roundtable reports the badges, such as '100+ sold in the last 30 days', depend on advertisers sharing item-level cart data." },
+    { src: "PPC Land", when: "Nov 22",
+      url: "https://ppc.land/merchant-center-sales-running-past-30-days-may-miss-googles-sale-badge/",
+      title: "Long-running sale prices may not earn Google's sale badge",
+      sum: "PPC Land reports Google's Merchant Center guidance says a sale price should ideally run no longer than 30 days." },
     { src: "Digiday", when: "Nov 24",
       url: "https://digiday.com/media-buying/ad-tech-briefing-meta-eyes-ctv-as-applovin-circles-criteo-signs-of-the-squeeze-on-independent-ad-tech/",
       title: "Meta is said to be exploring ways to extend its ads onto connected TV",
       sum: "Digiday, citing Next in Media and its own sources, reports Meta has looked at partnerships with TV makers and free streaming services." },
-    { src: "The Star (Reuters)", when: "Nov 18",
-      url: "https://www.thestar.com.my/tech/tech-news/2026/11/18/exclusive-applovin-among-firms-in-talks-to-acquire-criteo-sources-say",
-      title: "AppLovin is reported to be among bidders in talks to buy Criteo",
-      sum: "Reuters, citing two unnamed sources, says a deal for the roughly $1 billion ad tech company could come by year-end but is not certain." },
-    { src: "PPC Land", when: "Nov 22",
-      url: "https://ppc.land/adding-asins-to-an-amazon-brand-restates-the-previous-28-days-of-data",
-      title: "Adding products to an Amazon brand rewrites the prior 28 days of reporting data",
-      sum: "PPC Land reports Amazon's support pages say new ASINs take 4 to 7 business days to approve, with corrections processed over three weeks." },
+    { src: "Social Media Today", when: "Nov 23",
+      url: "https://www.socialmediatoday.com/news/pinterest-announces-partnership-with-microsoft-ads/875553/",
+      title: "Microsoft Advertising campaigns can now buy ad space on Pinterest",
+      sum: "Social Media Today reports the placements cover Pinterest's home feed, search and related Pins, starting in North America, Australia and New Zealand." },
     { src: "PPC Land", when: "Nov 22",
       url: "https://ppc.land/google-ads-surcharges-hit-3-in-france-and-italy-from-january-2027/",
       title: "Google will raise its ad surcharges in France and Italy to 3% in January",
       sum: "PPC Land reports Google's help page ties the increases to digital services taxes, while Turkey's surcharge falls to 2.25%." },
-    { src: "PPC Land", when: "Nov 22",
-      url: "https://ppc.land/google-lets-a-like-stand-in-for-5-seconds-of-viewing-in-shorts-conversions/",
-      title: "Likes, comments and shares on YouTube Shorts ads now count as engagement",
-      sum: "PPC Land reports, citing a Google help page, that these taps now count toward engaged-view conversions alongside 5 seconds of viewing." },
-    { src: "Search Engine Roundtable", when: "Nov 19",
-      url: "https://www.seroundtable.com/microsoft-ads-in-ai-overviews-on-bing-42578.html",
-      title: "Microsoft confirms ads now run inside Bing's AI Overviews",
-      sum: "Search Engine Roundtable reports the placements draw from existing campaigns such as Performance Max in every market except China." }
+    { src: "The Star (Reuters)", when: "Nov 18",
+      url: "https://www.thestar.com.my/tech/tech-news/2026/11/18/exclusive-applovin-among-firms-in-talks-to-acquire-criteo-sources-say",
+      title: "AppLovin is reported to be among bidders in talks to buy Criteo",
+      sum: "Reuters, citing two unnamed sources, says a deal for the roughly $1 billion ad tech company could come by year-end but is not certain." }
   ]},
   { id: "ai-funding", name: "AI & Funding", wide: true, items: [
-    { src: "Business Standard", when: "Nov 23",
-      url: "https://www.business-standard.com/amp/companies/start-ups/data-security-startup-matters-ai-raises-115-crore-in-pre-series-a-round-126112301165_1.html",
-      title: "Indian data security startup Matters.AI raises Rs 115 crore",
-      sum: "Business Standard reports Tanglin Venture Partners led the pre-Series A round, and the company plans to build a North American sales team." },
-    { src: "The Next Web", when: "Nov 23",
-      url: "https://thenextweb.com/news/agon-70m-series-a-synthetic-battlefield",
-      title: "London defense simulation startup Agon raises a $70 million Series A",
-      sum: "TNW reports Northzone led the round at a reported $450 million valuation, less than a year after the company was founded." },
-    { src: "The Next Web", when: "Nov 23",
-      url: "https://thenextweb.com/news/aevius-22m-insight-partners-mass-general-brigham-clinical-ai",
-      title: "Clinical AI spinout Aevius raises a $22 million seed round",
-      sum: "TNW reports Insight Partners led the round for the Mass General Brigham spinout, which sells to health systems, insurers and drugmakers." },
-    { src: "Bloomberg", when: "Nov 22",
-      url: "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
-      title: "Ant Group leads a $100 million round in Chinese robotics startup Simplexity",
-      sum: "Bloomberg reports the round values the physical-AI company at $1.6 billion." },
-    { src: "TechCrunch", when: "Nov 19",
-      url: "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-      title: "Everful raises $48.5 million to link smaller retailers with Chinese factories",
-      sum: "TechCrunch reports the company was started by former Alibaba executives." },
-    { src: "Fortune", when: "Nov 19",
-      url: "https://fortune.com/2026/11/19/series-a-funding-skyrocketed-2026-founders-arent-getting-more-chances/",
-      title: "Series A dollars are up sharply this year, but the number of deals is not",
-      sum: "Fortune cites Crunchbase data showing U.S. startups raised $42 billion in Series A rounds through October, up 60% from a year earlier." }
+    { src: "TechCrunch", when: "Nov 23",
+      url: "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      title: "Customer service AI company Sierra raises $1.75 billion at a $30 billion valuation",
+      sum: "TechCrunch reports the Series F was co-led by Greenoaks and Lightspeed Venture Partners and doubles the valuation Sierra reached about six months ago." },
+    { src: "TechCrunch", when: "Nov 24",
+      url: "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+      title: "Privacy-focused AI app maker Maple raises a $5.3 million seed round",
+      sum: "TechCrunch reports EPIC Ventures led the round for the company, whose models run in secure hardware environments so it cannot read user data." },
+    { src: "SiliconANGLE", when: "Nov 24",
+      url: "https://siliconangle.com/2026/11/24/verra-raises-5m-to-help-consulting-firms-forget-their-institutional-amnesia/",
+      title: "Verra raises $5 million to build AI search over consulting firms' past work",
+      sum: "SiliconANGLE reports Kearny Jackson led the seed round, with a16z Speedrun among the other investors." },
+    { src: "Yahoo Finance (Business Wire)", when: "Nov 24",
+      url: "https://finance.yahoo.com/technology/ai/articles/leash-biosciences-raises-11m-build-130000997.html",
+      title: "Leash Biosciences raises $11 million to generate lab data for training AI",
+      sum: "The Salt Lake City company says the round was co-led by Innovation Endeavors and Insight Partners." },
+    { src: "Embo", when: "Nov 23",
+      url: "https://embo.com/introducing-embo",
+      title: "Robotics AI startup Embo launches with a $110 million seed round",
+      sum: "The company says Andreessen Horowitz led the round, with Khosla Ventures, DST Global and Nvidia also investing." },
+    { src: "TechCrunch", when: "Nov 23",
+      url: "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      title: "Amazon confirms it is acquiring Decart's AI optimization technology and team",
+      sum: "TechCrunch reports Amazon did not disclose a price, while Bloomberg put the deal at about $7.5 billion." }
   ]}
 ];
 
@@ -242,9 +242,9 @@ const DATES = [
   ["Nov 27", "Black Friday"],
   ["Nov 28", "Small Business Saturday"],
   ["Nov 30", "Cyber Monday; Amazon's 12-day Black Friday event ends"],
+  ["Dec 1", "Giving Tuesday"],
   ["Dec 16", "Etsy's updated Terms of Use are due to take effect; Etsy has said revised AI wording is coming"],
-  ["Jan 1", "Google Ads surcharges rise to 3% in France and Italy and fall to 2.25% in Turkey"],
-  ["Jan 15", "Most of Amazon's 2027 U.S. FBA fee changes take effect"]
+  ["Jan 1", "Google Ads surcharges rise to 3% in France and Italy and fall to 2.25% in Turkey"]
 ];
 /* ===== END DAILY DATA ===== */
 
